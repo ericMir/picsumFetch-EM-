@@ -1,0 +1,79 @@
+@font-face{
+  font-family: "heading_now";
+  src: url(/heading_now/HeadingNowTrial-01Thin.ttf);
+}
+body{
+  font-family: "heading_now" ;
+    background-color: lightgray;
+    color: black;
+    margin: 6rem;
+}
+h1{
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: .2rem;
+}
+/* button {
+    grid-area: button;
+    margin: .2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    background: #4f81e3;
+    border: none;
+    border-radius: 20px;
+  }
+  button:hover {
+    background: #63c0ed;
+  } */
+
+.grid-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+row-gap: 3rem;
+column-gap: 6rem;
+
+}
+
+.grid-item{
+  background-color: pink;
+  display: grid;
+  grid-template-areas: "h2 img"
+                       "h2 img"
+                       "button img" ;
+grid-template-rows: auto 1fr auto;
+grid-template-columns: 1fr 1fr;
+border-radius: 10px;
+}
+
+.grid-item img {
+  grid-area: img;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.grid-item h2 {
+  grid-area: h2;
+  align-self: center;
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  
+}
+
+.grid-item button {
+  grid-area: button;
+  margin: .3rem;
+  line-height: 2rem;
+  font-weight: bold;
+  background: #4f81e3;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  text-shadow:  2px 2px;
+
+}
+
+.grid-item button:hover {
+  background: #63c0ed;
+}
